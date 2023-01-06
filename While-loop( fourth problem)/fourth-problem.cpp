@@ -22,13 +22,9 @@ using namespace std;
 int main() {
     int n,s = 1;
     cin >> n;
-    if (n > s) {
-        while (n > s) {
-        s = s * 2;
-        }  
-        if (s > n) cout << "NO";   
-        else if ((n % 2) == 0) cout << "YES";
-    }else if (n == s) cout << "YES";
-    else if (s > n) cout << "YES";
+    while (n > s) {
+    s = s * 2;
+    } if (n == s) cout << "YES";
+    else if (s > n) cout << "NO";
     return 0;
 }
